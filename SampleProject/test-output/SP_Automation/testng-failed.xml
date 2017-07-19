@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="3" name="Failed suite [SP_Automation]">
+  <parameter name="browser" value="firefox"/>
+  <listeners>
+    <listener class-name="com.sp.listeners.TestListener"/>
+  </listeners>
+  <test name="SP_Automation(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.sp.testscripts.SampleTestSuite">
+        <methods>
+          <include name="force" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.sp.testscripts.SampleTestSuite -->
+    </classes>
+  </test> <!-- SP_Automation(failed) -->
+</suite> <!-- Failed suite [SP_Automation] -->
